@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Portfolio - AB Web Solutions</title>
+    <style>
+body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .tech-gradient { background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #4facfe 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .animate-fade-in { animation: fadeIn 0.6s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .tech-border { border: 2px solid transparent; background: linear-gradient(white, white) padding-box, linear-gradient(135deg, #667eea, #764ba2) border-box; }
+/* Additional styles for multi-page website */
+.page-container {
+    padding-top: 80px; /* Space for fixed header */
+}
+
+.active-nav-item {
+    font-weight: bold;
+    border-bottom: 2px solid #2c82c9;
+}
+
+/* Project cards for programming projects */
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    color: #2c82c9;
+    margin-top: 0;
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f0f7ff;
+    color: #2c82c9;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.project-links a {
+    margin-right: 15px;
+}
+
+/* Pricing table styles */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.pricing-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.pricing-card h3 {
+    color: #2c82c9;
+    margin-top: 0;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin: 20px 0;
+}
+
+.price-description {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* About page styles */
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.credentials {
+    margin-top: 30px;
+}
+
+.credential-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.credential-icon {
+    margin-right: 10px;
+    color: #2c82c9;
+    font-size: 1.2rem;
+}
+
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">A <span>B</span></div>
+            <div class="mobile-menu-btn">☰</div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="projects.html">Programming Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-container">
+
+<section class="portfolio">
+    <div class="container">
+        <h1>Client Success Stories</h1>
+        <p>Real results from businesses that invested in expert consulting.</p>
+
+        <div class="case-study">
+            <h2>LuxuryWatch.com</h2>
+            <p>A luxury watch retailer achieving exceptional growth through targeted Google Ads campaigns and a custom Shopify store.</p>
+
+            <ul class="results">
+                <li>Implemented smart bidding strategies targeting high-intent customers</li>
+                <li>Custom Shopify theme with advanced filtering and search</li>
+                <li>Optimized mobile checkout process increasing conversion rate by 65%</li>
+                <li>Managed ad spend generating millions in revenue (15x ROI)</li>
+            </ul>
+
+            <img class="case-image" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Luxury Watch Store">
+        </div>
+
+        <div class="case-study">
+            <h2>CloudTech Solutions</h2>
+            <p>A B2B SaaS company achieving remarkable lead generation results through targeted advertising campaigns.</p>
+
+            <ul class="results">
+                <li>Developed targeted account-based marketing campaigns</li>
+                <li>Implemented advanced lead scoring and nurturing</li>
+                <li>Optimized landing pages increasing conversion rate by 75%</li>
+                <li>Created data-driven reporting dashboards using technical expertise</li>
+            </ul>
+
+            <img class="case-image" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="SaaS Dashboard">
+        </div>
+
+        <div class="case-study">
+            <h2>Fresh Fitness</h2>
+            <p>A local gym chain expanding their reach and membership base through targeted digital marketing.</p>
+
+            <ul class="results">
+                <li>Geo-targeted advertising campaigns</li>
+                <li>Custom landing pages for different membership tiers</li>
+                <li>Automated lead nurturing through email marketing</li>
+                <li>Implemented custom tracking using technical solutions</li>
+            </ul>
+
+            <img class="case-image" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Fitness Center">
+        </div>
+    </div>
+</section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo">A <span>B</span></div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="copyright">
+                &copy; 2024 AB Web Solutions. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+
+// Navigation toggle for mobile
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navMenu = document.getElementById('nav');
+
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+    }
+
+    // Close mobile menu when clicking navigation links
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navMenu.classList.remove('active');
+        });
+    });
+
+    // Highlight active navigation item based on current page
+    const currentPage = window.location.pathname.split('/').pop();
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPage || 
+            (currentPage === '' && href === 'index.html') || 
+            (currentPage === 'index.html' && href === 'index.html')) {
+            link.classList.add('active-nav-item');
+        }
+    });
+});
+
+</script>
+</body>
+</html>

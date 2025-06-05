@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - AB Web Solutions</title>
+    <style>
+body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .tech-gradient { background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #4facfe 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .animate-fade-in { animation: fadeIn 0.6s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .tech-border { border: 2px solid transparent; background: linear-gradient(white, white) padding-box, linear-gradient(135deg, #667eea, #764ba2) border-box; }
+/* Additional styles for multi-page website */
+.page-container {
+    padding-top: 80px; /* Space for fixed header */
+}
+
+.active-nav-item {
+    font-weight: bold;
+    border-bottom: 2px solid #2c82c9;
+}
+
+/* Project cards for programming projects */
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    color: #2c82c9;
+    margin-top: 0;
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f0f7ff;
+    color: #2c82c9;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.project-links a {
+    margin-right: 15px;
+}
+
+/* Pricing table styles */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.pricing-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.pricing-card h3 {
+    color: #2c82c9;
+    margin-top: 0;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin: 20px 0;
+}
+
+.price-description {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* About page styles */
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.credentials {
+    margin-top: 30px;
+}
+
+.credential-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.credential-icon {
+    margin-right: 10px;
+    color: #2c82c9;
+    font-size: 1.2rem;
+}
+
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">A <span>B</span></div>
+            <div class="mobile-menu-btn">☰</div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="projects.html">Programming Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-container">
+
+<section class="pricing">
+    <div class="container">
+        <h1>Simple, Transparent Pricing</h1>
+        <p>Choose the consulting package that best fits your needs.</p>
+
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>30-Minute Session</h3>
+                <div class="price">$150</div>
+                <p class="price-description">Perfect for specific questions and quick advice</p>
+
+                <ul class="pricing-features">
+                    <li>Focused consultation on a single topic</li>
+                    <li>Direct implementation advice</li>
+                    <li>Screen sharing and demonstrations</li>
+                    <li>Follow-up resources</li>
+                </ul>
+
+                <a href="https://calendly.com/your-calendly-link/30min" class="btn">Book 30-Min Session</a>
+            </div>
+
+            <div class="pricing-card" style="transform: scale(1.05); border: 2px solid #2c82c9;">
+                <div style="background: #2c82c9; color: white; padding: 5px; margin: -30px -30px 20px -30px; border-radius: 8px 8px 0 0;">
+                    <strong>MOST POPULAR</strong>
+                </div>
+                <h3>1-Hour Session</h3>
+                <div class="price">$250</div>
+                <p class="price-description">Comprehensive consultation for in-depth topics</p>
+
+                <ul class="pricing-features">
+                    <li>In-depth consultation on multiple topics</li>
+                    <li>Custom strategy development</li>
+                    <li>Technical implementation guidance</li>
+                    <li>Screen sharing and demonstrations</li>
+                    <li>Follow-up resources and support</li>
+                </ul>
+
+                <a href="https://calendly.com/your-calendly-link/60min" class="btn">Book 1-Hour Session</a>
+            </div>
+
+            <div class="pricing-card">
+                <h3>5-Hour Package</h3>
+                <div class="price">$1,125</div>
+                <p class="price-description">10% discount for multiple sessions</p>
+
+                <ul class="pricing-features">
+                    <li>Five 1-hour consulting sessions</li>
+                    <li>Flexible scheduling</li>
+                    <li>Comprehensive project support</li>
+                    <li>Priority booking</li>
+                    <li>Extended email support</li>
+                </ul>
+
+                <a href="https://calendly.com/your-calendly-link/package" class="btn">Book Package</a>
+            </div>
+        </div>
+
+        <div class="faq-section" style="margin-top: 60px;">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>What's included in each consulting session?</h3>
+                <p>Each session includes personalized consulting, hands-on implementation guidance, custom strategies for your business, recorded session notes, and follow-up resources. You'll also get email support between sessions.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do consulting sessions work?</h3>
+                <p>All sessions are conducted via video call (Zoom/Meet) and are fully customized to your business needs. I provide screen sharing, hands-on guidance, and follow-up materials after each session.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What if I need more time after my session?</h3>
+                <p>If we need additional time, you can book another session or upgrade to a package. I also offer brief email follow-up support for questions related to topics covered in our session.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What if I'm a complete beginner?</h3>
+                <p>Perfect! I specialize in consulting beginners and will start from the fundamentals. Each session is tailored to your current skill level, ensuring you learn at a comfortable pace.</p>
+            </div>
+        </div>
+
+        <div class="guarantee" style="background: #f5f9ff; padding: 30px; border-radius: 8px; margin-top: 40px; text-align: center;">
+            <h2>100% Satisfaction Guarantee</h2>
+            <p>If you're not completely satisfied with your consulting session, I'll refund your payment or provide a free follow-up session to address your concerns.</p>
+        </div>
+    </div>
+</section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo">A <span>B</span></div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="copyright">
+                &copy; 2024 AB Web Solutions. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+
+// Navigation toggle for mobile
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navMenu = document.getElementById('nav');
+
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+    }
+
+    // Close mobile menu when clicking navigation links
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navMenu.classList.remove('active');
+        });
+    });
+
+    // Highlight active navigation item based on current page
+    const currentPage = window.location.pathname.split('/').pop();
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPage || 
+            (currentPage === '' && href === 'index.html') || 
+            (currentPage === 'index.html' && href === 'index.html')) {
+            link.classList.add('active-nav-item');
+        }
+    });
+});
+
+</script>
+</body>
+</html>

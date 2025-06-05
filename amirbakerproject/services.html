@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - AB Web Solutions</title>
+    <style>
+body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .tech-gradient { background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #4facfe 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .animate-fade-in { animation: fadeIn 0.6s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .tech-border { border: 2px solid transparent; background: linear-gradient(white, white) padding-box, linear-gradient(135deg, #667eea, #764ba2) border-box; }
+/* Additional styles for multi-page website */
+.page-container {
+    padding-top: 80px; /* Space for fixed header */
+}
+
+.active-nav-item {
+    font-weight: bold;
+    border-bottom: 2px solid #2c82c9;
+}
+
+/* Project cards for programming projects */
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    color: #2c82c9;
+    margin-top: 0;
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f0f7ff;
+    color: #2c82c9;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.project-links a {
+    margin-right: 15px;
+}
+
+/* Pricing table styles */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.pricing-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.pricing-card h3 {
+    color: #2c82c9;
+    margin-top: 0;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin: 20px 0;
+}
+
+.price-description {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* About page styles */
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.credentials {
+    margin-top: 30px;
+}
+
+.credential-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.credential-icon {
+    margin-right: 10px;
+    color: #2c82c9;
+    font-size: 1.2rem;
+}
+
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">A <span>B</span></div>
+            <div class="mobile-menu-btn">☰</div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="projects.html">Programming Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-container">
+
+<section class="services">
+    <div class="container">
+        <h1>Expert Consulting Services</h1>
+        <p>Comprehensive digital marketing and technology consulting designed to help you scale your business.</p>
+
+        <div class="service-details" id="google-ads">
+            <h2>Google Ads Consulting</h2>
+            <p>Scale your advertising with proven Google Ads strategies. Learn campaign setup, optimization, and scaling techniques backed by both marketing expertise and software engineering principles.</p>
+
+            <div class="service-image">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Google Ads Dashboard">
+            </div>
+
+            <h3>What's Included:</h3>
+            <ul class="service-features">
+                <li><strong>Campaign setup & optimization</strong> - Strategic setup based on business goals and target audience</li>
+                <li><strong>Keyword research strategies</strong> - Data-driven keyword selection for maximum ROI</li>
+                <li><strong>ROI improvement techniques</strong> - Continuous optimization for better performance</li>
+                <li><strong>Custom attribution modeling</strong> - Technical approach to track true campaign value</li>
+                <li><strong>Competitor analysis</strong> - Identify opportunities in your market</li>
+            </ul>
+
+            <a href="pricing.html" class="btn">View Pricing Options</a>
+        </div>
+
+        <div class="service-details" id="google-suite">
+            <h2>Google Suite Training</h2>
+            <p>Scale your team productivity with Google Workspace. Comprehensive training on collaboration tools with technical automation insights from a software engineering perspective.</p>
+
+            <div class="service-image">
+                <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Google Suite Training">
+            </div>
+
+            <h3>What's Included:</h3>
+            <ul class="service-features">
+                <li><strong>Gmail & Calendar mastery</strong> - Email management and calendar optimization</li>
+                <li><strong>Google Sheets & Docs automation</strong> - Formulas, scripts, and app integration</li>
+                <li><strong>Team collaboration setup</strong> - Shared drives, real-time collaboration</li>
+                <li><strong>Custom scripts and integrations</strong> - Technical solutions using Apps Script</li>
+                <li><strong>Workflow optimization</strong> - Process improvement and automation</li>
+            </ul>
+
+            <a href="pricing.html" class="btn">View Pricing Options</a>
+        </div>
+
+        <div class="service-details" id="shopify">
+            <h2>Shopify Consulting</h2>
+            <p>Scale your e-commerce store for maximum growth. Learn to manage and optimize your Shopify store with insights from both marketing and software development perspectives.</p>
+
+            <div class="service-image">
+                <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Shopify Store">
+            </div>
+
+            <h3>What's Included:</h3>
+            <ul class="service-features">
+                <li><strong>Store setup & configuration</strong> - Complete store optimization</li>
+                <li><strong>Product optimization</strong> - Better product pages that convert</li>
+                <li><strong>Conversion optimization</strong> - Technical and marketing improvements</li>
+                <li><strong>Theme customization guidance</strong> - Design recommendations with technical understanding</li>
+                <li><strong>Analytics & reporting</strong> - Data-driven decisions using technical insights</li>
+            </ul>
+
+            <a href="pricing.html" class="btn">View Pricing Options</a>
+        </div>
+
+        <div class="service-details" id="strategy">
+            <h2>E-commerce Strategy Consulting</h2>
+            <p>Scale your business operations and performance. Strategic consulting combining technical knowledge with marketing expertise for comprehensive business growth.</p>
+
+            <div class="service-image">
+                <img src="https://images.unsplash.com/photo-1533750516457-a7f992034fec?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="E-commerce Strategy">
+            </div>
+
+            <h3>What's Included:</h3>
+            <ul class="service-features">
+                <li><strong>Business strategy audit</strong> - Complete business analysis</li>
+                <li><strong>Growth planning</strong> - Clear path to scaling your business</li>
+                <li><strong>Performance optimization</strong> - Technical and marketing improvements</li>
+                <li><strong>Conversion funnel analysis</strong> - Identify and fix bottlenecks</li>
+                <li><strong>Technical stack recommendations</strong> - Software recommendations from an engineer's perspective</li>
+            </ul>
+
+            <a href="pricing.html" class="btn">View Pricing Options</a>
+        </div>
+    </div>
+</section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo">A <span>B</span></div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="copyright">
+                &copy; 2024 AB Web Solutions. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+
+// Navigation toggle for mobile
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navMenu = document.getElementById('nav');
+
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+    }
+
+    // Close mobile menu when clicking navigation links
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navMenu.classList.remove('active');
+        });
+    });
+
+    // Highlight active navigation item based on current page
+    const currentPage = window.location.pathname.split('/').pop();
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPage || 
+            (currentPage === '' && href === 'index.html') || 
+            (currentPage === 'index.html' && href === 'index.html')) {
+            link.classList.add('active-nav-item');
+        }
+    });
+});
+
+</script>
+</body>
+</html>

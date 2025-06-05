@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - AB Web Solutions</title>
+    <style>
+body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .tech-gradient { background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #4facfe 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .animate-fade-in { animation: fadeIn 0.6s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .tech-border { border: 2px solid transparent; background: linear-gradient(white, white) padding-box, linear-gradient(135deg, #667eea, #764ba2) border-box; }
+/* Additional styles for multi-page website */
+.page-container {
+    padding-top: 80px; /* Space for fixed header */
+}
+
+.active-nav-item {
+    font-weight: bold;
+    border-bottom: 2px solid #2c82c9;
+}
+
+/* Project cards for programming projects */
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    color: #2c82c9;
+    margin-top: 0;
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f0f7ff;
+    color: #2c82c9;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.project-links a {
+    margin-right: 15px;
+}
+
+/* Pricing table styles */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.pricing-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.pricing-card h3 {
+    color: #2c82c9;
+    margin-top: 0;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin: 20px 0;
+}
+
+.price-description {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* About page styles */
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.credentials {
+    margin-top: 30px;
+}
+
+.credential-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.credential-icon {
+    margin-right: 10px;
+    color: #2c82c9;
+    font-size: 1.2rem;
+}
+
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">A <span>B</span></div>
+            <div class="mobile-menu-btn">☰</div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="projects.html">Programming Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-container">
+<section class="hero">
+<div class="container mx-auto px-6">
+<div class="text-center animate-fade-in">
+<div class="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+<i class="fas fa-star mr-2">
+</i>
+      8+ Years of Proven Digital Marketing Excellence
+     </div>
+<h1 class="text-5xl md:text-6xl font-bold mb-6">
+      Scale Your
+      <span class="text-blue-600">Google Ads</span>
+      &amp;
+      <span class="text-purple-600">Shopify</span>
+      with Expert Consulting
+     </h1>
+<p class="text-xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
+      Get personalized 1-on-1 consulting from a certified expert who has helped businesses scale to
+      <span class="font-semibold text-green-600">7-figures in 12 months</span>
+      and
+      <span class="font-semibold text-green-600">consistently generated $150K+ monthly revenue with $6K ad spend for several consecutive months</span>
+      (25x ROI)
+     </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+<a class="gradient-bg text-white px-8 py-4 rounded-full font-semibold text-lg hover:opacity-90 transition" href="https://calendly.com/your-calendly-link">
+<i class="fas fa-calendar-check mr-2">
+</i>
+       Book Free Strategy Call
+      </a>
+<a class="bg-white text-gray-700 px-8 py-4 rounded-full font-semibold text-lg border-2 border-gray-200 hover:border-blue-500 transition" href="#services">
+<i class="fas fa-arrow-down mr-2">
+</i>
+       Explore Services
+      </a>
+</div>
+<!-- Stats -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+<div class="bg-white rounded-2xl p-6 shadow-lg tech-border">
+<div class="text-3xl font-bold text-blue-600 mb-2">15+</div>
+<div class="text-gray-600">Businesses Served</div>
+</div>
+<div class="bg-white rounded-2xl p-6 shadow-lg tech-border">
+<div class="text-3xl font-bold text-green-600 mb-2">100%</div>
+<div class="text-gray-600">Client Satisfaction</div>
+</div>
+<div class="bg-white rounded-2xl p-6 shadow-lg tech-border">
+<div class="text-3xl font-bold text-purple-600 mb-2">8+</div>
+<div class="text-gray-600">Years Experience</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="services">
+    <div class="container">
+        <h2>Expert Consulting Services</h2>
+        <p>Specialized consulting to help you scale your business with proven digital marketing strategies.</p>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>Google Ads Consulting</h3>
+                <p>Scale your advertising with proven Google Ads strategies.</p>
+                <a href="services.html#google-ads" class="btn">Learn More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Google Suite Training</h3>
+                <p>Scale your team productivity with Google Workspace.</p>
+                <a href="services.html#google-suite" class="btn">Learn More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🛒</div>
+                <h3>Shopify Consulting</h3>
+                <p>Scale your e-commerce store for maximum growth.</p>
+                <a href="services.html#shopify" class="btn">Learn More</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📈</div>
+                <h3>E-commerce Strategy</h3>
+                <p>Scale your business operations and performance.</p>
+                <a href="services.html#strategy" class="btn">Learn More</a>
+            </div>
+        </div>
+
+        <div class="centered-button-container" style="text-align: center; margin-top: 40px;">
+            <a href="pricing.html" class="btn">View Pricing & Book a Session</a>
+        </div>
+    </div>
+</section>
+
+<section class="expertise">
+    <div class="container">
+        <h2>Dual Expertise: Engineering & Marketing</h2>
+        <p>Bringing together software engineering precision with data-driven marketing expertise for unique business insights.</p>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Software Engineering Background</h3>
+                <p>Computer Engineering degree from a top university with professional software development experience.</p>
+                <a href="about.html" class="btn">Learn More</a>
+            </div>
+
+            <div class="service-card">
+                <h3>Digital Marketing Mastery</h3>
+                <p>8+ years of hands-on experience scaling businesses through strategic marketing initiatives.</p>
+                <a href="portfolio.html" class="btn">View Portfolio</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="testimonials">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AB Web Solutions - Scale Your Business with Expert Consulting</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .tech-gradient { background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #4facfe 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .animate-fade-in { animation: fadeIn 0.6s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .tech-border { border: 2px solid transparent; background: linear-gradient(white, white) padding-box, linear-gradient(135deg, #667eea, #764ba2) border-box; }</style>
+</head>
+<body class="bg-gray-50">
+<!-- Header -->
+<header class="bg-white shadow-lg fixed w-full top-0 z-50">
+<div class="container mx-auto px-6 py-4">
+<div class="flex justify-between items-center">
+<div class="text-2xl font-bold">
+<span class="text-blue-600">AB</span>
+<span class="text-gray-800">Solutions</span>
+</div>
+<nav class="hidden md:flex space-x-8">
+<a class="text-gray-700 hover:text-blue-600 transition" href="#home">Home</a>
+<a class="text-gray-700 hover:text-blue-600 transition" href="#services">Services</a>
+<a class="text-gray-700 hover:text-blue-600 transition" href="#about">About</a>
+<a class="text-gray-700 hover:text-blue-600 transition" href="#pricing">Pricing</a>
+<a class="text-gray-700 hover:text-blue-600 transition" href="#contact">Contact</a>
+</nav>
+<a class="gradient-bg text-white px-6 py-2 rounded-full font-semibold hover:opacity-90 transition" href="https://calendly.com/your-calendly-link">Book Consultation</a>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="pt-24 pb-16 bg-gradient-to-br from-blue-50 to-purple-50" id="home">
+<div class="container mx-auto px-6">
+<div class="text-center animate-fade-in">
+<div class="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+<i class="fas fa-star mr-2">
+</i>
+      8+ Years of Proven Digital Marketing Excellence
+     </div>
+<h1 class="text-5xl md:text-6xl font-bold mb-6">
+      Scale Your
+      <span class="text-blue-600">Google Ads</span>
+      &amp;
+      <span class="text-purple-600">Shopify</span>
+      with Expert Consulting
+     </h1>
+<p class="text-xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
+      Get personalized 1-on-1 consulting from a certified expert who has helped businesses scale to
+      <span class="font-semibold text-green-600">7-figures in 12 months</span>
+      and
+      <span class="font-semibold text-green-600">consistently generated $150K+ monthly revenue with $6K ad spend for several consecutive months</span>
+      (25x ROI)
+     </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+<a class="gradient-bg text-white px-8 py-4 rounded-full font-semibold text-lg hover:opacity-90 transition" href="https://calendly.com/your-calendly-link">
+<i class="fas fa-calendar-check mr-2">
+</i>
+       Book Free Strategy Call
+      </a>
+<a class="bg-white text-gray-700 px-8 py-4 rounded-full font-semibold text-lg border-2 border-gray-200 hover:border-blue-500 transition" href="#services">
+<i class="fas fa-arrow-down mr-2">
+</i>
+       Explore Services
+      </a>
+</div>
+<!-- Stats -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+<div class="bg-white rounded-2xl p-6 shadow-lg tech-border">
+<div class="text-3xl font-bold text-blue-600 mb-2">15+</div>
+<div class="text-gray-600">Businesses Served</div>
+</div>
+<div class="bg-white rounded-2xl p-6 shadow-lg tech-border">
+<div class="text-3xl font-bold text-green-600 mb-2">100%</div>
+<div class="text-gray-600">Client Satisfaction</div>
+</div>
+<div class="bg-white rounded-2xl p-6 shadow-lg tech-border">
+<div class="text-3xl font-bold text-purple-600 mb-2">8+</div>
+<div class="text-gray-600">Years Experience</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Industries Section -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-bold mb-4">
+      Trusted Across
+      <span class="text-blue-600">Multiple Industries</span>
+</h2>
+<p class="text-xl text-gray-600">Proven success across diverse business sectors with tailored strategies for each industry</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+<div class="bg-blue-50 p-4 rounded-xl text-center card-hover">
+<i class="fas fa-heartbeat text-2xl text-blue-600 mb-2">
+</i>
+<div class="text-sm font-semibold">Healthcare &amp; Medical</div>
+</div>
+<div class="bg-orange-50 p-4 rounded-xl text-center card-hover">
+<i class="fas fa-utensils text-2xl text-orange-600 mb-2">
+</i>
+<div class="text-sm font-semibold">Restaurants &amp; Food Service</div>
+</div>
+<div class="bg-purple-50 p-4 rounded-xl text-center card-hover">
+<i class="fas fa-wrench text-2xl text-purple-600 mb-2">
+</i>
+<div class="text-sm font-semibold">Automotive &amp; Mechanic Shops</div>
+</div>
+<div class="bg-green-50 p-4 rounded-xl text-center card-hover">
+<i class="fas fa-shopping-cart text-2xl text-green-600 mb-2">
+</i>
+<div class="text-sm font-semibold">E-commerce Stores</div>
+</div>
+<div class="bg-yellow-50 p-4 rounded-xl text-center card-hover">
+<i class="fas fa-gem text-2xl text-yellow-600 mb-2">
+</i>
+<div class="text-sm font-semibold">Luxury Goods &amp; Retail</div>
+</div>
+<div class="bg-indigo-50 p-4 rounded-xl text-center card-hover">
+<i class="fas fa-laptop text-2xl text-indigo-600 mb-2">
+</i>
+<div class="text-sm font-semibold">Digital Products &amp; Services</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-16 bg-gray-50" id="services">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-bold mb-4">Expert Consulting Services</h2>
+<p class="text-xl text-gray-600">Personalized consulting sessions designed to help you scale the most important digital marketing tools for your business</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Google Ads Consulting -->
+<div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+<div class="text-4xl text-blue-600 mb-4">
+<i class="fab fa-google">
+</i>
+</div>
+<h3 class="text-xl font-bold mb-4">Google Ads Consulting</h3>
+<p class="text-gray-600 mb-6">Scale your advertising with proven Google Ads strategies. Learn campaign setup, optimization, and scaling techniques.</p>
+<ul class="space-y-2 mb-6">
+<li class="flex items-center text-sm">
+<i class="fas fa-check text-green-500 mr-2">
+</i>
+        Campaign setup &amp; optimization
+       </li>
+<li class="flex items-center text-sm">
+<i class="fas fa-check text-green-500 mr-2">
+</i>
+        Keyword research strategies
+       </li>
+<li class="flex items-center text-sm">
+<i class="fas fa-check text-green-500 mr-2">
+</i>
+        ROI improvement techniques
+       </li>
+</ul>
+<div class="text-2xl font-bold text-blue-600 mb-4"></div>
+</div>
+<!-- Google Suite Training -->
+<div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+<div class="text-4xl text-green-600 mb-4">
+<i class="fab fa-google-drive">
+</i>
+</div>
+<h3 class="text-xl font-bold mb-4">Google Suite Training</h3>
+<p class="text-gray-600 mb-6">Scale your team productivity with Google Workspace. Comprehensive training on collaboration tools.</p>
+<ul class="space-y-2 mb-6">
+<li class="flex items-center text-sm">
+<i class="fas fa-check text-green-500 mr-2">
+</i>
+        Gmail &amp; Calendar mastery
+       </li>
+<li class="flex items-center text-sm">
+<i class="fas fa-check text-green-500 mr-2">
+</i>
+        Sheets &amp; Docs automation
+       </li>
+<li class="flex items-center text-sm">
+<i class="fas fa-check text-green-500 mr-2">
+</i>
+        Team collaboration setup
+       </li>
+</ul>
+<div class="text-2xl font-bold text-green-600 mb-4"></div>
+</div>
+<!-- Shopify Consulting -->
+<div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+<div class="text-4xl text-purple-600 mb-4">
+<i class="fab fa-shopify">
+</i>
+</div>
+<h3 class="text-xl font-bold mb-4">Shopify Consulting</h3>
+<p class="text-gray-600 mb-6">Scale your e-commerce store for maximum growth. Learn to manage and optimize your Shopify store.</p>
+<ul class="space-y-2 mb-6">
+<li class="flex items-center text-sm">
+<i class="fas fa-check text-green-500 mr-2">
+</i>
+        Store setup &amp; configuration
+       </li>
+<li class="flex items-center text-sm">
+<i class="fas fa-check text-green-500 mr-2">
+</i>
+        Product optimization
+       </li>
+<li class="flex items-center text-sm">
+<i class="fas fa-check text-green-500 mr-2">
+</i>
+        Conversion optimization
+       </li>
+</ul>
+<div class="text-2xl font-bold text-purple-600 mb-4"></div>
+</div>
+<!-- E-commerce Strategy -->
+<div class="bg-white rounded-2xl p-8 shadow-lg card-hover relative">
+<div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold">MOST POPULAR</div>
+<div class="text-4xl text-orange-600 mb-4">
+<i class="fas fa-chart-line">
+</i>
+</div>
+<h3 class="text-xl font-bold mb-4">E-commerce Strategy</h3>
+<p class="text-gray-600 mb-6">Scale your business operations and performance. Strategic consulting to optimize your e-commerce growth.</p>
+<ul class="space-y-2 mb-6">
+<li class="flex items-center text-sm">
+<i class="fas fa-check text-green-500 mr-2">
+</i>
+        Business strategy audit
+       </li>
+<li class="flex items-center text-sm">
+<i class="fas fa-check text-green-500 mr-2">
+</i>
+        Growth planning
+       </li>
+<li class="flex items-center text-sm">
+<i class="fas fa-check text-green-500 mr-2">
+</i>
+        Performance optimization
+       </li>
+</ul>
+<div class="text-2xl font-bold text-orange-600 mb-4"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-16 bg-white" id="about">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<div class="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+<i class="fas fa-user-tie mr-2">
+</i>
+       Expert Consultant
+      </div>
+<h2 class="text-4xl font-bold mb-6">Learn from a Certified Digital Marketing Expert</h2>
+<p class="text-lg text-gray-600 mb-8 leading-relaxed">With over 8 years of hands-on experience in digital marketing, I've helped businesses across diverse industries achieve remarkable growth. From scaling e-commerce stores to 7-figures within a year to consistently generating $150K+ monthly revenue with just $6K in ad spend for several consecutive months, I specialize in delivering measurable results that transform businesses.</p>
+<div class="space-y-4 mb-8">
+<div class="flex items-center">
+<i class="fab fa-google text-blue-600 text-xl mr-3">
+</i>
+<span class="font-semibold">Google Ads Certified Professional</span>
+</div>
+<div class="flex items-center">
+<i class="fab fa-shopify text-green-600 text-xl mr-3">
+</i>
+<span class="font-semibold">Shopify Partner Expert</span>
+</div>
+<div class="flex items-center">
+<i class="fab fa-google text-red-600 text-xl mr-3">
+</i>
+<span class="font-semibold">Google Workspace Specialist</span>
+</div>
+</div>
+<a class="gradient-bg text-white px-8 py-4 rounded-full font-semibold hover:opacity-90 transition inline-block" href="https://calendly.com/your-calendly-link">
+<i class="fas fa-phone mr-2">
+</i>
+       Schedule a Call
+      </a>
+</div>
+<div class="relative">
+<img alt="1-on-1 Consulting Session" class="rounded-2xl shadow-2xl" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl">
+<div class="text-2xl font-bold text-green-600">25x</div>
+<div class="text-sm text-gray-600">ROI Achievement</div>
+</div>
+<div class="absolute -top-6 -left-6 bg-white p-6 rounded-2xl shadow-xl">
+<div class="text-2xl font-bold text-blue-600">7-Fig</div>
+<div class="text-sm text-gray-600">Business Growth</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-bold mb-4">Client Success Stories</h2>
+<p class="text-xl text-gray-600">Real results from businesses that invested in expert consulting</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+<img alt="E-commerce Success" class="w-full h-48 object-cover rounded-xl mb-6" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80"/>
+<div class="text-2xl font-bold text-green-600 mb-4">400% ROI Increase</div>
+<blockquote class="text-gray-600 mb-4 italic">"The Google Ads consulting transformed my business. Went from struggling with campaigns to achieving a 4x ROAS within 3 months."</blockquote>
+<div class="font-semibold">Sarah Chen</div>
+<div class="text-sm text-gray-500">E-commerce Store Owner</div>
+</div>
+<div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+<img alt="Business Owner" class="w-full h-48 object-cover rounded-xl mb-6" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80"/>
+<div class="text-2xl font-bold text-purple-600 mb-4">65% Conversion Increase</div>
+<blockquote class="text-gray-600 mb-4 italic">"The Shopify consulting helped me optimize my store layout and checkout process. Conversion rates improved by 65% in just 6 weeks."</blockquote>
+<div class="font-semibold">Marcus Rodriguez</div>
+<div class="text-sm text-gray-500">Luxury Retailer</div>
+</div>
+<div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+<img alt="Business Team" class="w-full h-48 object-cover rounded-xl mb-6" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=80"/>
+<div class="text-2xl font-bold text-blue-600 mb-4">40% Productivity Gain</div>
+<blockquote class="text-gray-600 mb-4 italic">"Google Suite training revolutionized our team collaboration. We're now 40% more productive and completely organized."</blockquote>
+<div class="font-semibold">Jennifer Kim</div>
+<div class="text-sm text-gray-500">Fitness Business</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-16 bg-white" id="pricing">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-bold mb-4">Transparent Pricing</h2>
+<p class="text-xl text-gray-600">No contracts, no hidden fees. Pay only for the consulting you need.</p>
+</div>
+<div class="max-w-4xl mx-auto">
+<div class="bg-gradient-to-r from-orange-500 to-pink-500 rounded-2xl p-8 text-white text-center mb-8">
+<h3 class="text-2xl font-bold mb-4">Special Offer</h3>
+<p class="text-lg mb-6">Book your first session and get a free 30-minute strategy consultation</p>
+<a class="bg-white text-orange-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition inline-block" href="https://calendly.com/your-calendly-link">Claim Free Consultation</a>
+</div>
+<div class="text-center">
+<div class="text-6xl font-bold text-gray-800 mb-4">
+       $150
+       <span class="text-2xl text-gray-500">/hour</span>
+</div>
+<p class="text-xl text-gray-600 mb-8">All consulting services at one simple rate</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-left">
+<div class="bg-gray-50 p-4 rounded-xl">
+<i class="fab fa-google text-blue-600 text-xl mb-2">
+</i>
+<div class="font-semibold mb-2">Google Ads</div>
+<div class="text-sm text-gray-600">Campaign setup, optimization, scaling strategies</div>
+</div>
+<div class="bg-gray-50 p-4 rounded-xl">
+<i class="fab fa-google-drive text-green-600 text-xl mb-2">
+</i>
+<div class="font-semibold mb-2">Google Suite</div>
+<div class="text-sm text-gray-600">Workspace setup, productivity training</div>
+</div>
+<div class="bg-gray-50 p-4 rounded-xl">
+<i class="fab fa-shopify text-purple-600 text-xl mb-2">
+</i>
+<div class="font-semibold mb-2">Shopify</div>
+<div class="text-sm text-gray-600">Store management, optimization tactics</div>
+</div>
+<div class="bg-gray-50 p-4 rounded-xl">
+<i class="fas fa-chart-line text-orange-600 text-xl mb-2">
+</i>
+<div class="font-semibold mb-2">Strategy</div>
+<div class="text-sm text-gray-600">Business audit, growth planning</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+<p class="text-xl text-gray-600">Everything you need to know about my consulting services</p>
+</div>
+<div class="max-w-4xl mx-auto space-y-6">
+<div class="bg-white rounded-2xl p-8 shadow-lg">
+<h3 class="text-xl font-bold mb-4">How do consulting sessions work?</h3>
+<p class="text-gray-600">All sessions are conducted via video call (Zoom/Meet) and are fully customized to your business needs. I provide screen sharing, hands-on guidance, and follow-up materials after each session.</p>
+</div>
+<div class="bg-white rounded-2xl p-8 shadow-lg">
+<h3 class="text-xl font-bold mb-4">What's included in each hourly session?</h3>
+<p class="text-gray-600">Each session includes personalized consulting, hands-on implementation, custom strategies for your business, recorded session notes, and follow-up resources. You'll also get email support between sessions.</p>
+</div>
+<div class="bg-white rounded-2xl p-8 shadow-lg">
+<h3 class="text-xl font-bold mb-4">Do you offer package deals?</h3>
+<p class="text-gray-600">Yes! I offer 5-hour and 10-hour packages with discounted rates. These are perfect for comprehensive consulting programs and typically provide better value for extensive learning goals.</p>
+</div>
+<div class="bg-white rounded-2xl p-8 shadow-lg">
+<h3 class="text-xl font-bold mb-4">What if I'm a complete beginner?</h3>
+<p class="text-gray-600">Perfect! I specialize in consulting beginners and will start from the fundamentals. Each session is tailored to your current skill level, ensuring you learn at a comfortable pace.</p>
+</div>
+<div class="bg-white rounded-2xl p-8 shadow-lg">
+<h3 class="text-xl font-bold mb-4">How quickly will I see results?</h3>
+<p class="text-gray-600">Most clients start implementing strategies immediately and see measurable improvements within 2-4 weeks. The timeline depends on your business type, current setup, and how quickly you implement the consulting.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-16 bg-white" id="contact">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-bold mb-4">Ready to Get Started?</h2>
+<p class="text-xl text-gray-600">Book your free strategy call and let's discuss your business goals</p>
+</div>
+<div class="max-w-4xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<div class="bg-gray-50 rounded-2xl p-8">
+<h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
+<div class="space-y-4 mb-8">
+<div class="flex items-center">
+<i class="fas fa-envelope text-blue-600 text-xl mr-4">
+</i>
+<span>
+<a class="__cf_email__" data-cfemail="dbb3beb7b7b49bbab9acbeb9a8b4b7aeafb2b4b5a8f5b8b4b6" href="/cdn-cgi/l/email-protection">[email protected]</a>
+</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-phone text-green-600 text-xl mr-4">
+</i>
+<span>(555) 123-4567</span>
+</div>
+<div class="flex items-center">
+<i class="fas fa-map-marker-alt text-red-600 text-xl mr-4">
+</i>
+<span>San Francisco, CA</span>
+</div>
+</div>
+</div>
+<div class="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
+<h3 class="text-2xl font-bold mb-6">Free Strategy Call Includes:</h3>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center">
+<i class="fas fa-check mr-3">
+</i>
+         30-minute consultation
+        </li>
+<li class="flex items-center">
+<i class="fas fa-check mr-3">
+</i>
+         Business audit &amp; recommendations
+        </li>
+<li class="flex items-center">
+<i class="fas fa-check mr-3">
+</i>
+         Custom consulting plan
+        </li>
+<li class="flex items-center">
+<i class="fas fa-check mr-3">
+</i>
+         No obligation to purchase
+        </li>
+</ul>
+<a class="block w-full bg-white text-blue-600 text-center py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition" href="https://calendly.com/your-calendly-link">Book Your Free Call</a>
+<div class="text-center mt-4 text-sm opacity-90">100% Free • No Commitment Required • 30-Minute Call</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-6">
+<div class="text-center">
+<div class="text-2xl font-bold mb-4">
+<span class="text-blue-400">AB</span>
+      Solutions
+     </div>
+<div class="flex justify-center space-x-6 mb-6">
+<a class="hover:text-blue-400 transition" href="#home">Home</a>
+<a class="hover:text-blue-400 transition" href="#services">Services</a>
+<a class="hover:text-blue-400 transition" href="#about">About</a>
+<a class="hover:text-blue-400 transition" href="#pricing">Pricing</a>
+<a class="hover:text-blue-400 transition" href="#contact">Contact</a>
+</div>
+<div class="text-gray-400">© 2024 AB Web Solutions. All rights reserved.</div>
+</div>
+</div>
+</footer>
+<!-- Smooth Scrolling Script -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+</script>
+<script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                const headerHeight = 80;
+                const targetPosition = target.offsetTop - headerHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-white', 'shadow-lg');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+        });</script>
+</body>
+</section>
+<section class="cta">
+    <div class="container" style="text-align: center; padding: 60px 0;">
+        <h2>Ready to Scale Your Business?</h2>
+        <p>Book your free strategy call to discover how my technical and marketing expertise can transform your business.</p>
+        <a href="contact.html" class="btn">Book Your Free Call</a>
+    </div>
+</section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo">A <span>B</span></div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="copyright">
+                &copy; 2024 AB Web Solutions. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+
+// Navigation toggle for mobile
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navMenu = document.getElementById('nav');
+
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+    }
+
+    // Close mobile menu when clicking navigation links
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navMenu.classList.remove('active');
+        });
+    });
+
+    // Highlight active navigation item based on current page
+    const currentPage = window.location.pathname.split('/').pop();
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPage || 
+            (currentPage === '' && href === 'index.html') || 
+            (currentPage === 'index.html' && href === 'index.html')) {
+            link.classList.add('active-nav-item');
+        }
+    });
+});
+
+</script>
+</body>
+</html>
